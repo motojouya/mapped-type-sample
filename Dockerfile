@@ -13,19 +13,11 @@ ENV LANG=ja_JP.UTF-8 \
     LC_ALL=ja_JP.UTF-8 \
     NODE_PATH=/usr/local/lib/node_modules
 
-RUN npm install -g forever && \
-    npm install -g babel-cli && \
-    npm install -g babel-core && \
-    npm install -g uglify-js && \
-    npm install -g webpack && \
-    npm install -g eslint && \
-    npm install -g parcel && \
-    npm install -g typescript && \
-    mkdir /usr/local/src/tabinote && \
-    chown node /usr/local/src/tabinote && \
-    chmod 755 /usr/local/src/tabinote
+RUN mkdir /usr/local/src/typescript && \
+    chown node /usr/local/src/typescript && \
+    chmod 755 /usr/local/src/typescript
 
-WORKDIR /usr/local/src/tabinote
+WORKDIR /usr/local/src/typescript
 RUN chown -R node:node .
 
 USER node
