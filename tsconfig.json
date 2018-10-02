@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "strictNullChecks": false,
+    "noUnusedLocals" : true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "outDir": "./building/",
+    "sourceMap": true,
+    "jsx": "react",
+    "lib": ["dom", "ES2017"],
+    "moduleResolution": "node",
+    "typeRoots": ["types", "node_modules/@types"]
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

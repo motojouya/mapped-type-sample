@@ -1,0 +1,17 @@
+{
+  "name": "ts-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "stop": "node stop index.js",
+    "restart": "npm stop && npm start"
+  },
+  "author": "Takuya Sugiyama (@motojouya)",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "typescript": "^3.1.1"
+  }
+}
